@@ -1,0 +1,122 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  max-height: 720px;
+}
+
+#navi {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-link {
+  font-family: 'Freight Big Pro W01',Garamond,'Baskerville','Baskerville Old Face','Hoefler Text','Times New Roman',serif;
+}
+
+#openingMessage {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  font-family: 'Freight Big Pro W01',Garamond,'Baskerville','Baskerville Old Face','Hoefler Text','Times New Roman',serif;
+}
+
+.outer{
+	pointer-events: none;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	transform: translate(-50%, -50%);
+	transition: 10ms all;
+	opacity: 0;
+}
+
+.b{
+	position: absolute;
+	width: 110%;
+	height: 115%;
+	border: 2px solid #3A6168;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.b1{ transform: rotate(0deg); animation: anim1 3s infinite 100ms; }
+.b2{ transform: rotate(8deg); animation: anim1 3s infinite 200ms; }
+.b3{ transform: rotate(16deg);animation: anim1 3s infinite 300ms; }
+
+
+@keyframes anim1 {
+	from{
+		transform: rotate(0deg);
+	}
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bbb{
+	position: absolute;
+	left: calc(50% - 65px);
+	top: calc(50% - 25px);
+	width: 130px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: none;
+	transition: 500ms all;
+	color: #3A6168;
+	font-family:'Freight Big Pro W01',Garamond,'Baskerville','Baskerville Old Face','Hoefler Text','Times New Roman',serif;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  border: 2px solid rgba(0,0,0,0);
+}
+
+.bbb:hover{
+	border-color: transparent;
+	letter-spacing: 2px;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    padding-bottom: 30%;
+  }
+
+  .content h1 {
+    font-size: 450%;
+  }
+
+  .btn {
+    font-size: 110%;
+    padding: 9px 17px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding-bottom: 40%;
+  }
+
+  .content h1 {
+    font-size: 300%;
+  }
+
+  .btn {
+    font-size: 110%;
+    padding: 9px 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #openingMessage {
+    display: hide;
+  }
+}
