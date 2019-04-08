@@ -46,7 +46,7 @@ html, body {
   overflow: hidden;
 }
 
-
+/*Carousel and Button*/
 .carousel-caption {
   font-family: 'Freight Big Pro W01',Garamond,'Baskerville','Baskerville Old Face','Hoefler Text','Times New Roman',serif;
 }
@@ -217,13 +217,4 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-
-
-/*#blogPost {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
